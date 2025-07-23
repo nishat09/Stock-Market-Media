@@ -1,25 +1,28 @@
-Stock-Market-Media
-A full-stack social media–style web application built to facilitate discussions around stock tickers. Users can register, log in, and comment on individual stocks. Designed to explore real-world application development using C# and .NET.
+# 📈 Stock-Market-Media
 
-🔧 Features (in progress):
+A full-stack social media–style web application built to facilitate discussions around stock tickers. Users can register, log in, and comment on individual stocks. Designed to explore real-world application development using **C#**, **.NET**, and **React**.
 
-Secure user authentication with ASP.NET Core Identity
+---
 
-Real-time commenting on individual stock symbols
+## 🔧 Features (In Progress)
 
-React-based dynamic UI
+- 🔐 Secure user authentication with ASP.NET Core Identity  
+- 💬 Real-time commenting on individual stock symbols  
+- ⚛️ Dynamic and responsive UI built with React  
+- 📈 Planned: stock ticker integration, user profiles, threaded replies  
 
-Planned: stock ticker integration, user profile pages, threaded replies
+---
 
-🛠 Tech Stack:
+## 🛠 Tech Stack
 
-Frontend: React
+| Layer        | Technologies                            |
+|--------------|------------------------------------------|
+| **Frontend** | React                                     |
+| **Backend**  | ASP.NET Core Web API, C#                 |
+| **Database** | SQL Server (via SQL Server Management Studio) |
+| **Tools**    | Entity Framework Core, Postman, Git, Docker (planned) |
 
-Backend: C#, ASP.NET Core Web API
-
-Database: SQL Server (via SQL Server Management Studio)
-
-Other Tools: Entity Framework Core, Postman, Docker (planned), Git
+---
 
 ## 🖥️ How to Run Locally
 
@@ -33,59 +36,55 @@ Other Tools: Entity Framework Core, Postman, Docker (planned), Git
 
 ---
 
-### 📦 Backend Setup (ASP.NET Core)
+### ⚙️ Backend Setup (ASP.NET Core)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/nishat09/Stock-Market-Media.git
-   cd Stock-Market-Media
-Navigate to the backend directory:
+```bash
+# 1. Clone the repository
+git clone https://github.com/nishat09/Stock-Market-Media.git
+cd Stock-Market-Media
 
-bash
-Copy
-Edit
+# 2. Navigate to the backend
 cd api
-Set up the connection string in appsettings.json:
+```
 
-json
-Copy
-Edit
+Edit `appsettings.json` with your SQL Server connection string:
+```json
 "ConnectionStrings": {
   "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=StockMediaDb;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
-Apply EF Core migrations:
+```
 
-bash
-Copy
-Edit
+```bash
+# 3. Apply migrations
 dotnet ef database update
-Run the API:
 
-bash
-Copy
-Edit
+# 4. Run the API
 dotnet watch run
-💻 Frontend Setup (React)
-Open a new terminal and navigate to the frontend:
+```
 
-bash
-Copy
-Edit
+---
+
+### 💻 Frontend Setup (React)
+
+```bash
+# 1. Open a new terminal and go to the client directory
 cd ../client
-Install dependencies:
 
-bash
-Copy
-Edit
+# 2. Install dependencies
 npm install
-Start the development server:
 
-bash
-Copy
-Edit
+# 3. Start the frontend
 npm run dev
-📌 Status
+```
+
+---
+
+## 📌 Status
+
 🚧 This project is in active development. Contributions, suggestions, and improvements are welcome!
 
-📄 License
+---
+
+## 📄 License
+
 This project is open-sourced under the MIT License.
